@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Image Gallery | Uriel Penker</title>
+
+    <!-- stylesheets -->
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/image-gallery.css"/>
+
+</head>
+<body>
+    <header class="main-header">
+        <h2>Image Gallery - Uriel Penker</h2>
+    </header>
+    <section class="main-content">
+        <ul id="image-gallery" class="image-gallery">
+
+        </ul>
+    </section>
+    <footer class="main-footer">
+        <div id="reload_imageGallery" class="link-btn"><span>Reload Page</span></div>
+    </footer>
+
+    <!--- Image gallery thumbnail Template -->
+    <template id="thumbnail-template">
+        <li class="image-gallery__thumbnail">
+            <div class="thumbnail">
+                <div id="imageTitle" class="thumbnail__title"></div>
+                <div class="thumbnail__imageContainer">
+                    <a id="imageLink" target="_blank" href="">
+                        <img id="imageSrc" src="" width="300" height="200">
+                    </a>
+                </div>
+                <div class="thumbnail__details">
+                    <div class="thumbnail__details__author link-btn" id="authorImages"><span id="imageAuthor"></span></div>
+                    <div class="thumbnail__details__imageDate"><span id="imageDate"></span></div>
+                </div>
+            </div>
+        </li>
+    </template>
+
+    <!-- scripts -->
+    <script src="js/image-gallery.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
